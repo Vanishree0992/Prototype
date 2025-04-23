@@ -1,0 +1,1480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Instrument Sans", sans-serif;
+    background-color: black;
+}
+
+.container {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    gap: 20px;
+    background-color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding-top: 10px;
+    padding-right: 70px;
+
+}
+
+nav ul {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.navbar {
+    position: relative;
+    top: 90px;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 2px gray;
+    z-index: 1000;
+    background-color: white;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 25px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.services1 {
+    padding-top: 100px;
+    width: 98%;
+    background: linear-gradient(#d0acfa, white);
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+
+}
+
+.service img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.service {
+    margin: 30px;
+    width: 95%;
+    height: 600px;
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.service .text {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+}
+
+.service .text h1 {
+    font-size: 62px;
+    font-weight: 600;
+}
+
+.service .text p {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.service .overlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    height: 100px;
+    color: black;
+    padding: 20px;
+    padding-right: 50px;
+    padding: absolute;
+    background-color: white;
+    border-radius: 20px;
+    transform: translate(100%, -100%);
+}
+
+.service .overlay p {
+    line-height: 1.6;
+}
+
+.services2 h2 {
+    font-size: 56px;
+    width: 50%;
+    padding-left: 60px;
+    font-weight: 600;
+    padding-bottom: 80px;
+}
+
+.services2 h2 span {
+    color: rgb(115, 14, 203);
+}
+
+.selection {
+    width: 100%;
+    background-color: rgb(208, 207, 207);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    box-shadow: 0 2px 3px gray;
+
+}
+
+.selecttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    line-height: 1.6;
+}
+
+.selecttext h3 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.selecttext p {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.selection button {
+    width: 130px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+.services3 h3 {
+    font-size: 44px;
+    font-weight: 600;
+    padding: 90px;
+}
+
+.services3 p {
+    padding-left: 90px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 90px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 150px 150px;
+    gap: 10px;
+    margin: 80px;
+}
+
+.grid1,
+.grid3,
+.grid6,
+.grid8 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.grid1 a,
+.grid3 a,
+.grid6 a,
+.grid8 a {
+    position: absolute;
+    color: rgb(120, 116, 116);
+    top: 5px;
+    right: 15px;
+    font-size: 25px;
+}
+
+.grid1 p,
+.grid3 p,
+.grid6 p,
+.grid8 p {
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.services4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.services4 .side1 {
+    width: 50%;
+    height: 400px;
+    padding-top: 100px;
+}
+
+.services4 .side1 h3 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+
+.services4 .side1 p {
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-right: 70px;
+    font-weight: 400;
+}
+
+.side2 {
+    width: 50%;
+    height: 700px;
+    position: relative;
+}
+
+.side2 .img1 {
+    position: absolute;
+    width: 55%;
+    height: 60%;
+    top: 0;
+    right: 0;
+}
+
+.side2 .img2 {
+    position: absolute;
+    width: 55%;
+    height: 60%;
+    bottom: 0;
+    left: 0;
+}
+
+.side2 button {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(241, 169, 3);
+    position: absolute;
+    top: 39%;
+    left: 40%;
+}
+
+.selection1 {
+    margin-top: 110px;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(208, 207, 207);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    box-shadow: 0 2px 3px gray;
+
+}
+
+.selecttext1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    line-height: 1.6;
+}
+
+.selecttext1 img {
+    object-fit: cover;
+}
+
+.selecttext1 h3 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.selecttext1 p {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.selection1 button {
+    width: 130px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+.management {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.management h3 {
+    font-size: 40px;
+    padding-left: 90px;
+    padding-bottom: 60px;
+    font-weight: 600;
+}
+
+.management p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-left: 90px;
+    padding-right: 50px;
+}
+
+.start {
+    width: 90%;
+    margin-left: 60px;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+
+.start h6 {
+    font-size: 44px;
+    text-align: center;
+}
+
+.start p {
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 90px;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.start button {
+    width: 200px;
+    height: 70px;
+    background-color: rgb(4, 2, 2);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.start button a {
+    color: white;
+    font-size: 18px;
+}
+
+.logofoot {
+    display: flex;
+    padding-left: 1070px;
+    justify-content: right;
+    align-items: flex-end;
+
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 15%;
+    grid-template-rows: auto;
+    gap: 80px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.summary h4 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #994def;
+}
+
+.summary ul li {
+    list-style: none;
+    line-height: 2.2;
+    font-size: 18px;
+    font-weight: 450;
+    padding-left: 5px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.social {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    font-weight: 400;
+    justify-content: space-around;
+}
+
+.restart {
+    padding-left: 1375px;
+}
+
+.restart button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+    background-color: gray;
+    color: white;
+    border-radius: 15px;
+    padding: 8px;
+    border: none;
+}
+
+@media (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        font-family: "Instrument Sans", sans-serif;
+        background-color: rgb(23, 22, 22);
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .logo {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0;
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {margin: 0;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .services1 {
+        padding-top: 100px;
+        width: 95%;
+        background: linear-gradient(#d0acfa, white);
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+
+    }
+
+    .services1 .service img {
+        width: 95%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 60px;
+        margin: 0;
+    }
+
+    .service {
+        width: 95%;
+        height: 600px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .service .text {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .service .text h1 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    .service .text p {
+        width: 80%;
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+
+    .service .overlay {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 47%;
+        height: 100px;
+        color: black;
+        padding-right: 30px;
+        padding: absolute;
+        background-color: white;
+        border-radius: 20px;
+        transform: translate(100%, -100%);
+    }
+
+    .service .overlay p {
+        line-height: 1.6;
+    }
+
+    .services2 {
+        margin-top: 120px;
+    }
+
+    .services2 h2 {margin: 0;
+        font-size: 30px;
+        width: 50%;
+        font-weight: 500;
+        padding-bottom: 80px;
+        padding-right: 0;
+    }
+
+    .services2 h2 span {
+        color: rgb(115, 14, 203);
+    }
+
+    .selection {
+        width: 95%;
+        background-color: rgb(208, 207, 207);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0 2px 3px gray;
+        margin: 0;
+        padding: 0;
+    }
+
+    .selection img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .selecttext {
+        display: flex;
+        flex-direction: column;
+        
+        line-height: 1.2;
+    }
+
+    .selecttext h3 {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .selecttext p {
+
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .selection button {
+        width: 130px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .services3 h3 {
+        font-size: 30px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+    }
+
+    .services3 p {
+        padding-left: 10px;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 150px 150px 150px 150px;
+        gap: 10px;
+        margin: 0;
+
+    }
+
+    .grid1,
+    .grid3,
+    .grid6,
+    .grid8 {
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    .grid1 a,
+    .grid3 a,
+    .grid6 a,
+    .grid8 a {
+        position: absolute;
+        color: rgb(120, 116, 116);
+        top: 5px;
+        right: 15px;
+        font-size: 15px;
+    }
+
+    .grid1 p,
+    .grid3 p,
+    .grid6 p,
+    .grid8 p {
+        font-size: 10px;
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+
+    .services4 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 98%;
+        grid-template-rows: 550px 500px ;
+        margin: 0;
+        padding: 0;
+    }
+
+    .services4 .side1 {
+        width: 100%;
+    }
+
+    .services4 .side1 h3 {
+        font-size: 30px;
+        font-weight: 600;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .services4 .side1 p {
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 400;
+
+    }
+
+    .side2 {
+        width: 99%;
+        height: 300px;
+        position: relative;
+    }
+
+    .side2 .img1 {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 0;
+        right: 0;
+    }
+
+    .side2 .img2 {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .side2 button {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        background-color: rgb(241, 169, 3);
+        position: absolute;
+        top: 39%;
+        left: 40%;
+    }
+
+    .selection1 {
+
+        margin: 0;
+        width: 95%;
+        height: 800px;
+        background-color: rgb(208, 207, 207);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 0 2px 3px gray;
+    }
+
+    .selecttext1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.6;
+    }
+
+    .selecttext1 img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .selecttext1 h3 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .selecttext1 p {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .selection1 button {
+        width: 130px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 16px;
+        
+    }
+
+    .management {
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .management h3 {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 30px;
+        padding-bottom: 60px;
+        font-weight: 400;
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .management p {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        padding: 0;
+
+    }
+
+    .start {
+        width: 80%;
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        border-bottom: 3px solid black;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .start h6 {
+        font-size: 34px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .start p {
+        padding-top: 90px;
+        line-height: 1.6;
+        font-weight: 500;
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .start button {
+        width: 200px;
+        height: 70px;
+        background-color: rgb(4, 2, 2);
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .start button a {
+        color: white;
+        font-size: 18px;
+    }
+
+    .logofoot {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .summary {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .summary h4 {
+        font-size: 22px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        color: #994def;
+        text-align: center;
+    }
+
+    .summary ul li {
+        list-style: none;
+        line-height: 1.2;
+        font-size: 16px;
+        font-weight: 450;
+        text-align: center;
+    }
+
+    footer {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: rgb(251, 245, 245);
+    }
+
+    footer p {
+        font-size: 16px;
+        font-weight: 400;
+       
+    }
+
+    .social {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        font-weight: 400;}
+        
+
+    .restart {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .restart button {
+        position: fixed;
+        right: 50px;
+        bottom: 0;
+    }
+
+    .restart button a {
+        color: white;
+        font-size: 18px;
+    }
+}
+@media(min-width:700px) and (max-width:1000px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        font-family: "Instrument Sans", sans-serif;
+        background-color:white;
+        overflow-x: hidden;
+    }
+    
+    .container {
+    width:  100%;
+    padding: 0;
+    margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        gap: 20px;
+        background-color: white;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        padding-top: 10px;
+        padding-right: 70px;
+    
+    }
+    
+    nav ul {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    
+    }
+    
+    .navbar {
+        position: relative;
+        top: 90px;
+        width: 100%;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px 2px gray;
+        z-index: 1000;
+        background-color: white;
+    }
+    
+    nav ul li {
+        list-style: none;
+        font-size: 20px;
+    
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    main{width: 100%;
+    padding: 0;
+margin: 0;}
+    .services1 {
+        padding-top: 50px;
+        width: 98%;
+        background: linear-gradient(#d0acfa, white);
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+        margin-top: 30px;
+        padding-bottom: 50px;
+    
+    }
+    
+    .service img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 60px;
+    }
+    
+    .service {
+        margin: 10px;
+        width: 95%;
+        height: 600px;
+        position: relative;
+        text-align: left;
+        color: white;
+    }
+    
+    .service .text {
+        position: absolute;
+        top: 30%;
+        left: 37%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .service .text h1 {
+        font-size: 62px;
+        font-weight: 600;
+    }
+    
+    .service .text p {
+        width: 80%;
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    
+    .service .overlay {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+        height: 100px;
+        color: black;
+        padding: 20px;
+        padding-right: 50px;
+        margin: 0;
+        background-color: white;
+        border-radius: 20px;
+        transform: translate(100%, -100%);
+    }
+    
+    .service .overlay p {
+        line-height: 1.5;
+    }
+    
+    .services2 h2 {
+        font-size: 40px;
+        width: 50%;
+        padding-left: 20px;
+        font-weight: 600;
+        padding-bottom: 80px;
+    }
+    
+    .services2 h2 span {
+        color: rgb(115, 14, 203);
+    }
+    
+    .selection {
+        width: 100%;
+        background-color: rgb(208, 207, 207);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0 2px 3px gray;
+    
+    }
+    .selection img{width: 100%;
+    object-fit: cover;padding: 0;
+margin: 0;}
+    .selecttext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        line-height: 1.6;
+    }
+    
+    .selecttext h3 {
+        font-size: 40px;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .selecttext p {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .selection button {
+        width: 130px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 16px;
+        margin-left: 20px;
+        margin-bottom:20px ;
+    }
+    
+    .services3 h3 {
+        font-size: 40px;
+        font-weight: 600;
+        padding: 20px;
+    }
+    
+    .services3 p {
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        padding-right: 20px;
+    }
+    
+    .boxes {
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-rows: 150px 150px;
+        gap: 10px;
+    
+    }
+    
+    .grid1,
+    .grid3,
+    .grid6,
+    .grid8 {
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        position: relative;
+    
+    }
+    
+    .grid1 a,
+    .grid3 a,
+    .grid6 a,
+    .grid8 a {
+        position: absolute;
+        color: rgb(120, 116, 116);
+        top: 5px;
+        right: 15px;
+        font-size: 25px;
+    }
+    
+    .grid1 p,
+    .grid3 p,
+    .grid6 p,
+    .grid8 p {
+        font-size: 15px;
+        line-height: 2;
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    .services4 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .services4 .side1 {
+        width: 50%;
+        padding-top: 100px;
+    }
+    
+    .services4 .side1 h3 {
+        font-size: 40px;
+        font-weight: 600;
+        padding-left: 20px;
+        padding-bottom: 50px;
+    }
+    
+    .services4 .side1 p {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        font-weight: 400;
+    }
+    
+    .side2 {margin-top: 250px;
+        width: 50%;
+        position: relative;
+    }
+    
+    .side2 .img1 {
+        position: absolute;
+        width: 55%;
+        height: 60%;
+        top: 0;
+        right: 0;
+    }
+    
+    .side2 .img2 {
+        position: absolute;
+        width: 55%;
+        height: 60%;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .side2 button {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        font-size: 40px;
+        padding: 10px;
+        color: white;
+        background-color: rgb(241, 169, 3);
+        position: absolute;
+        top: 39%;
+        left: 40%;
+    }
+    
+    .selection1 {
+        margin-top: 110px;
+        margin-bottom: 70px;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(208, 207, 207);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0 2px 3px gray;
+    
+    }
+    .selection1 img{width: 100%;
+    object-fit: cover;}
+    .selecttext1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        line-height: 1.6;
+    }
+    
+
+    .selecttext1 h3 {
+        font-size: 40px;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    
+    .selecttext1 p {
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .selection1 button {
+        width: 130px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 16px;
+        margin-left: 80px;
+    }
+    
+    .management {
+        margin-top: 350px;
+        margin-bottom: 50px;
+    }
+    
+    .management h3 {
+        font-size: 40px;
+        padding-left: 90px;
+        padding-bottom: 60px;
+        font-weight: 600;
+    }
+    
+    .management p {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        padding-left: 90px;
+        padding-right: 50px;
+    }
+    
+    .start {
+        width: 90%;
+        margin-left: 60px;
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 3px solid black;
+    }
+    
+    .start h6 {
+        font-size: 44px;
+        text-align: center;
+    }
+    
+    .start p {
+        padding-top: 90px;
+        padding-left: 90px;
+        padding-right: 90px;
+        line-height: 1.6;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    
+    .start button {
+        width: 200px;
+        height: 70px;
+        background-color: rgb(4, 2, 2);
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .start button a {
+        color: white;
+        font-size: 18px;
+    }
+    
+    .logofoot {
+        display: flex;
+        padding-left: 500px;
+        justify-content: right;
+
+    
+    }
+    
+    .summary {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding-top: 40px;
+       
+    }
+    
+    .summary h4 {
+        font-size: 22px;
+        font-weight: 600;
+        padding-bottom: 20px;
+        color: #994def;
+    }
+    
+    .summary ul li {
+        list-style: none;
+        line-height: 2.2;
+        font-size: 18px;
+        font-weight: 450;
+        padding-left: 5px;
+    }
+    
+    footer {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 50px;
+        color: rgb(16, 16, 16);
+        padding-bottom: 30px;
+    }
+    
+    footer p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .social {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        font-size: 25px;
+        font-weight: 400;
+        justify-content: space-around;
+    }
+    
+    .restart {
+        padding-left: 1375px;
+    }
+    
+    .restart button {
+        position: fixed;
+        bottom: 0;
+        right: 25px;
+        font-size: 18px;
+        background-color: gray;
+        color: white;
+        border-radius: 15px;
+        padding: 8px;
+        border: none;
+    }
+}
