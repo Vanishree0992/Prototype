@@ -1,0 +1,432 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: "Cinzel Decorative", serif;} */
+body {
+    width: 100%;
+    font-family: "Baloo 2", sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+header img {
+    width: 100%;
+    height: 90%;
+}
+
+header .nav {
+    width: 80%;
+}
+
+header .nav nav ul {
+    width: 80%;
+    padding-left: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav nav ul li .active{display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    }
+header .nav nav ul li {
+    list-style: none;
+}
+
+header .nav nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+header .nav nav ul a.active {
+    background-color: #a1a0a0;
+    color: white;
+    border-radius: 0;
+    backdrop-filter: grayscale(100%);
+
+}
+
+main {
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+
+}
+
+.about h1 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.about h2 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    color: #2a2a2a;
+    padding-top: 20px;
+}
+
+.about p {
+    font-size: 15px;
+    width: 60%;
+    padding-left: 600px;
+}
+
+.grid {
+    width: 89%;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 350px 350px 350px;
+    gap: 80px;
+    background-color: #e4e4e2;
+}
+
+.grid .grid2 img,
+.grid .grid3 img,
+.grid .grid6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid .grid1,
+.grid .grid4,
+.grid .grid5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.grid h3 {
+    font-size: 26px;
+}
+
+.grid p {
+    color: #616060;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    gap: 55px;
+}
+
+.work .worktxt {
+    padding-top: 50px;
+    padding-right: 200px;
+}
+
+.work .worktxt p {
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+.work .worktxt h1 {
+    color: #2a2a2a;
+}
+
+.team h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.team .teams {
+    margin: 170px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.news {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    color: #2a2a2a;
+    margin-bottom: 150px;
+}
+
+.news p {
+    padding-top: 20px;
+    font-weight: 200;
+}
+
+.news h1 {
+    font-size: 40px;
+}
+
+.summary {
+    width: 93%;
+    margin: 50px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.summary img {
+    position: absolute;
+    top: -83px;
+    left: 0;
+}
+
+.summary .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 2.6;
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+footer .start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: start;
+}
+
+footer .end {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 60px;
+}
+
+footer .end p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer .end p,
+.footer .start p {
+    font-size: 15px;
+}
+
+footer .start p a {
+    font-size: 14;
+    font-weight: lighter;
+    color: #111;
+}
+
+.restart button {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 90px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    header img {
+        height: auto;
+    }
+
+    header .nav nav ul {
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .about p {
+        width: 90%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 50px 10px;
+        gap: 40px;
+    }
+
+    .grid .grid1,
+    .grid .grid4,
+    .grid .grid5 {
+        padding: 40px 20px;
+    }
+
+    .work {
+        flex-direction: column;
+        margin: 50px 10px;
+    }
+
+    .work .worktxt {
+        padding-right: 0;
+        padding-top: 20px;
+    }
+
+    .team .teams {
+        flex-direction: column;
+        margin: 30px 10px;
+        gap: 20px;
+    }
+
+    .summary {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .summary img {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .summary .box {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    footer .start,
+    footer .end {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .restart button {
+        width: 70px;
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media   (min-width: 768px) and (max-width: 1000px){
+
+    header .nav nav ul {
+        padding-left: 100px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .about h1 {
+        font-size: 45px;
+    }
+
+    .about h2 {
+        font-size: 35px;
+    }
+
+    .about p {
+        width: 80%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 50px auto;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .grid .grid1,
+    .grid .grid4,
+    .grid .grid5 {
+        padding: 40px;
+    }
+
+    .grid h3 {
+        font-size: 24px;
+    }
+
+    .work {
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+
+    .work .worktxt {
+        padding: 20px;
+        padding-right: 0;
+    }
+
+    .team .teams {
+        margin: 50px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news {
+        margin: 50px 30px;
+    }
+
+    .summary {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .summary .box {
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .summary img {
+        position: static;
+        margin-bottom: 20px;
+        width: 120px;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    footer .start,
+    footer .end {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,448 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: "Cinzel Decorative", serif;} */
+body {
+  width: 100%;
+  font-family: "Baloo 2", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+header .top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .top .list {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+header .shop {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-right: 50px;
+}
+
+header img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+header .shop button {
+  width: 75px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+
+header nav {
+  width: 70%;
+}
+
+header nav ul {
+  width: 90%;
+  padding-left: 450px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  list-style: none;
+}
+header nav ul li .active{display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  }
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+main {
+  width: 100%;
+}
+
+.touch {
+  width: 100%;
+  height: 200px;
+  padding-top: 0;
+  background-color: #cbcbcb;
+  color: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.touch h1 {
+  font-size: 40px;
+  padding-top: 0;
+}
+
+.touch p {
+  width: 30%;
+  font-size: 15px;
+  color: #4b4b4b;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contact {
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 14px;
+  padding-bottom: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 60%;
+  margin: 40px;
+  padding: 20px;
+  background: white;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid #2f2f2f;
+}
+
+textarea {
+  height: 120px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  background-color: #222;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
+
+.map {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.map iframe {
+  width: 100%;
+  object-fit: cover;
+}
+.summary {
+  padding-top: 50px;
+  width: 93%;
+  margin: 50px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.summary img {
+  position: absolute;
+  top: -83px;
+  left: 0;
+}
+
+.summary .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 2.6;
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+footer .start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  align-items: start;
+}
+
+footer .end {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 60px;
+}
+
+footer .end p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer .end p,
+.footer .start p {
+  font-size: 15px;
+}
+
+footer .start p a {
+  font-size: 14;
+  font-weight: lighter;
+  color: #111;
+}
+
+.restart button {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 90px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  header .top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header .top .list {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header .shop {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .touch {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .touch p {
+    width: 90%;
+  }
+
+  .form-container {
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .summary {
+    margin: 20px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .summary .box {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .summary img {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  footer .start,
+  footer .end {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .restart button {
+    width: 70px;
+    font-size: 12px;
+  }
+}
+@media  (min-width: 768px) and (max-width: 1024px) {
+  header .top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header .top .list {
+    width: 80%;
+    justify-content: space-around;
+  }
+
+  header .shop {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .touch h1 {
+    font-size: 32px;
+  }
+
+  .touch p {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .form-container {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .form-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .form-row .form-group {
+    flex: 1 1 45%;
+  }
+
+  .summary {
+    margin: 30px auto;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .summary .box {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .summary img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  footer .start,
+  footer .end {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}

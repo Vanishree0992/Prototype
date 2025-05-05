@@ -1,0 +1,430 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Baloo 2", sans-serif;
+    background-color: #f5f5f5;
+}
+
+header nav {
+    width: 70%;
+}
+
+header nav ul {
+    width: 90%;
+    padding-left: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+}
+header nav ul li .active{display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    }
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.best {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 600px;
+    grid-gap: 50px;
+    padding-left: 75px;
+}
+
+.best .book img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border: 10px solid rgb(181, 180, 180);
+    border-radius: 20px;
+}
+
+.best .book .foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.best .book .foot .author {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.best .book .foot .author .name {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.best .book .foot .author .price {
+    font-size: 17px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.best .book img:hover {
+    transform: scale(1);
+    border: 0;
+}
+
+.placed {
+    width: 90%;
+    position: relative;
+}
+
+.placed .parent {
+    width: 100%;
+    display: flex;
+    margin: 70px;
+    border-radius: 20px;
+
+}
+
+.placed .over {
+    width: 550px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(98, 97, 97, 0.1);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 60px;
+    backdrop-filter: grayscale(100%)brightness(60%);
+
+}
+
+.placed .parent img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.proceed button {
+    width: 150px;
+    height: 60px;
+    background-color: #111;
+    margin-bottom: 90px;
+    margin-left: 1200px;
+}
+
+.proceed button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.summary {
+    width: 95%;
+    margin: 30px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.summary img {
+    position: absolute;
+    top: -83px;
+    left: 0;
+}
+
+.summary .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 2.6;
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+    margin: 0;
+}
+
+footer .start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: start;
+}
+
+footer .end {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: flex-end;
+    width: 30%;
+    padding-right: 60px;
+}
+
+footer .end p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer .end p,
+.footer .start p {
+    font-size: 15px;
+}
+
+footer .start p a {
+    font-size: 14;
+    font-weight: lighter;
+    color: #111;
+}
+
+.restart button {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    width: 90px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+    .best {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 30px;
+    }
+
+    .placed {
+        width: 100%;
+        position: relative;
+    }
+    
+    .placed .parent {
+        width: 80%;
+        display: flex;
+        margin: 10px;
+        border-radius: 20px;
+    
+    }
+    
+    .placed .over {
+       display: none;
+    
+    }
+    .placed .parent img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .proceed button {
+        width: 100px;
+        height: 30px;
+        background-color: #111;
+        margin-bottom: 50px;
+        margin-left: 200px;
+    }
+    
+    .proceed button a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+        
+
+    .summary {
+        width: 90%;
+    }
+
+    .summary .box {
+        width: 90%;
+        flex-direction: column;
+        padding: 20px;
+        font-size: 14px;
+        padding-right: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .start,
+    footer .end {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .restart button {
+        width: 70px;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .summary img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        padding-left: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .best {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 600px;
+        grid-gap: 30px;
+        padding-left: 25px;}
+    .placed {
+        width: 90%;
+        position: relative;
+    }
+    
+    .placed .parent {
+        width: 100%;
+        display: flex;
+        margin: 20px;
+        border-radius: 20px;
+    
+    }
+    
+    .placed .over {
+      display: none;
+    
+    }
+    
+    .placed .parent img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+    
+    .proceed button {
+        width: 150px;
+        height: 60px;
+        background-color: #111;
+        margin-bottom: 90px;
+        margin-left: 500px;
+    }
+    
+    .proceed button a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .summary {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .summary .box {
+        flex-direction: row;
+        padding: 30px 20px;
+        font-size: 15px;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 20px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .start,
+    footer .end {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .restart button {
+        width: 80px;
+        padding: 8px;
+    }
+
+    .summary img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}

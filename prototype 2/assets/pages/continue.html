@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Cinzel+Decorative:wght@400;700;900&display=swap"
+  rel="stylesheet">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../css/continue.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=".../index.html">HOME</a></li>
+                <li><a class="active" href="./explore.html">EXPLORE</a></li>
+                <li><a  href="./about.html">ABOUT</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="best">
+        <div class="book">
+            <img src="../images/best2.png">
+            <div class="foot">
+                <div class="author">
+                    <div class="name">
+                    <p>Authur : Gwen Genie</p>
+                    <p>Illustration : The Case of Missing Smile</p>
+                    <p>Genre : Mistry story for Kids</p>
+                </div>
+                <div class="price">
+                    <p>₹ 400</p><br>
+                    <p style="font-size: 10px;width: 70px;height: 15px; background-color: green;color:white;text-align: center;">Available</p>
+                </div>
+            </div>
+           
+        </div>
+        </div>
+        <div class="book">
+            <img src="../images/best3.png">
+            <div class="foot">
+                <div class="author">
+                    <div class="name">
+                    <p>Authur : Ben Dangin</p>
+                    <p>Illustration : Home work yuck</p>
+                    <p>Genre : story for Kids</p>
+                </div>
+                <div class="price">
+                    <p>₹ 400</p><br>
+                    <p style="font-size: 10px;width: 70px;height: 15px; background-color: green;color:white;text-align: center;">Available</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+  <div class="checkout-container">
+    <form>
+      <h2>Billing Details</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" placeholder="Mukesh" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" placeholder="Kanan" required>
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" placeholder="Magic books">
+        </div>
+        <div class="form-group">
+          <label for="country">Country / Region *</label>
+          <select id="country" name="country" required>
+            <option value="">Select</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="address">Street address *</label>
+        <input type="text" id="address" placeholder="j-street" required>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group">
+          <label for="city">Town / City *</label>
+          <input type="text" id="city" placeholder="Bangalore" required>
+        </div>
+        <div class="form-group">
+          <label for="state">State *</label>
+          <input type="text" id="state" placeholder="Karnataka" required>
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group">
+          <label for="zip">ZIP Code</label>
+          <input type="text" id="zip" placeholder="123123">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" placeholder="123123123123" required>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="jabdd@gmail.com">
+      </div>
+  
+      <div class="form-group">
+        <label for="notes">Order notes</label>
+        <textarea id="notes" placeholder="Hello"></textarea>
+      </div>
+
+    </form>
+
+    <div class="table">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th class="right-align">Subtotal</th>
+        </tr>
+        <tr>
+          <td><strong>Illustration : Home Work Yuck</strong></td>
+          <td class="right-align">₹400</td>
+        </tr>
+        <tr>
+          <td><strong>Illustration : Home Work Yuck</strong></td>
+          <td class="right-align">₹400</td>
+        </tr>
+        <tr>
+          <td>Luana Bowl</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Subtotal</td>
+          <td class="right-align">.</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td class="right-align">.</td>
+        </tr>
+        <tr class="total">
+          <td>Total</td>
+          <td class="right-align">₹800</td>
+        </tr>
+      </table>
+      <div class="payment-container">
+        <h3>Payment</h3>
+    
+        <div class="radio-group">
+          <input type="radio" checked>
+          <label>Credit card</label>
+          <img src="../images/mastercard-logo.png" alt="Mastercard" width="40" class="mastercard-logo">
+        </div>
+    
+        <input type="text" placeholder="987654321">
+        <input type="text" placeholder="mukesh">
+    
+        <div class="row">
+          <input type="text" placeholder="2030">
+          <input type="text" placeholder="Security code">
+        </div>
+        <button class="place-order"><a style="text-decoration: none;color: white;" href="../pages/orderplaced.html">PLACE ORDER</a> </button>
+    </div>
+  </div>
+  </div>
+  <div class="summary">
+    <img src="../images/logo.png">
+    <div class="box">
+        <div class="box1">
+            <p style="font-size: 17px;"><b>Helpful Resources</b></p>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Our Books</p>
+            <p>Gift Ideas</p>
+            <p>Reading Tips</p>
+        </div>
+        <div class="box2">
+            <p style="font-size: 17px;"><b>Stay Connected</b></p>
+            <p>Facebook Page</p>
+            <p>Instagram Feed</p>
+            <p>Twitter Updates</p>
+            <p>Blog Posts</p>
+            <p>Events Calender</p>
+        </div>
+        <div class="box3">
+            <p style="font-size: 17px;"><b>Newsletter Signup</b></p>
+            <p>Join Us</p>
+            <p>Get Updates</p>
+            <p>Special Offers</p>
+            <p>Book Reviews</p>
+            <p>Reading Challenges</p>
+        </div>
+    </div>
+</div>
+</main>
+<footer>
+    <div class="start">
+        <p>@2025 Magic books. All rights reserved.</p>
+        <p><a href="">Privacy Policy</a></p>
+        <p><a href="">Terms of Service</a></p>
+        <p><a href="">Cookies Settings</a></p>
+    </div>
+    <div class="end">
+        <p>ⓕ</p>
+        <p>[◉°]</p>
+        <p>𝕏</p>
+        <p>[in]</p>
+        <p>▶️</p>
+    </div>
+</footer>
+<div class="restart">
+     <button type="restart"><a style="text-decoration: none;color: white;" href="#">↩Restart</a></button>
+</div>
+</body>
+</html>
