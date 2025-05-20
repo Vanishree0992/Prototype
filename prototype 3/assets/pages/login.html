@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Popup with Success Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .open-login-btn {
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: orange;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .popup-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      width: 300px;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .popup-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .popup-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .popup-form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .popup-form .forgot-password {
+      font-size: 12px;
+      text-align: right;
+      color: gray;
+      cursor: pointer;
+    }
+
+    .popup-form button {
+      width: 100%;
+      background-color: orange;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 22px;
+      color: black;
+      cursor: pointer;
+    }
+
+    .success-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      font-size: 18px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+<button class="open-login-btn" onclick="openLogin()">Log In</button>
+
+<div class="popup-overlay" id="loginPopup">
+  <div class="popup-form">
+    <span class="close-btn" onclick="closeLogin()">&times;</span>
+    <h2>LOG IN</h2>
+    <label for="loginEmail">Email</label>
+    <input type="email" id="loginEmail" onclick="autoFillLogin()" readonly>
+
+    <label for="loginPassword">Password</label>
+    <input type="password" id="loginPassword" onclick="autoFillLogin()" readonly>
+
+    <div class="forgot-password">Forgot password?</div>
+
+    <button onclick="submitLogin()">LOG IN</button>
+  </div>
+</div>
+
+<div class="success-popup" id="successPopup">Login Successful!</div>
+
+<script>
+  function openLogin() {
+    document.getElementById("loginPopup").style.display = "flex";
+  }
+
+  function closeLogin() {
+    document.getElementById("loginPopup").style.display = "none";
+  }
+
+  function autoFillLogin() {
+    document.getElementById("loginEmail").value = "demo@example.com";
+    document.getElementById("loginPassword").value = "password123";
+  }
+
+  function submitLogin() {
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+
+    if (email && password) {
+      closeLogin();
+      showSuccessMessage();
+    }
+  }
+
+  function showSuccessMessage() {
+    const successPopup = document.getElementById("successPopup");
+    successPopup.style.display = "block";
+
+    setTimeout(() => {
+      successPopup.style.display = "none";
+    }, 3000);
+  }
+</script>
+
+</body>
+</html>
